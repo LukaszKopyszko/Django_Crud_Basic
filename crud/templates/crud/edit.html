@@ -7,6 +7,20 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         <title>CRUD OPERATION</title>
         <style>
+            input[type=text],
+            input[type=email],
+            input[type=number] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+              }
+            select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+            }  
             *{
                 box-sizing: border-box;
                 -webkit-box-sizing: border-box;
@@ -193,7 +207,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="submit" value="Update employee info" class="btn btn-warning" role="button" style="display: block;"></td>
+                            <td><input type="submit" value="Update employee info" class="btn btn-warning" role="button" style="width: 100%;"></td>
                             <td><a href="{% url 'showemp' %}" class="btn btn-secondary" role="button" style="display: block;">Return to employees list</a></td>
                         </tr>
                         {% if messages %}
